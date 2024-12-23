@@ -1,14 +1,3 @@
-FROM python:3.8
-
-WORKDIR /all_llm_pro
-
-
-# 의존성 파일 복사 및 설치
-COPY requirements.txt .
-RUN pip install --upgrade pip && pip install -r requirements.txt
-
-# 앱 코드 복사
-COPY . .
-
-# 컨테이너 실행 시 uvicorn 실행
-CMD ["uvicorn", "app.api_main:app", "--host", "0.0.0.0", "--port", "8888"]
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd37d70bf94f6ad898cfbd8473057c3063a75a7e5c6b84d616f5ed7ce6398bad
+size 312
