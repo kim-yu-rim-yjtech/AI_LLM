@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:063b35d8e5d056a0fc1ab1b0d5085aa9b256255798143a0de720f64e57955c3d
-size 448
+# 데이터 처리
+pandas==2.0.3
+psycopg2==2.9.10
+
+# PyTorch 및 관련 라이브러리
+torch==2.2.1
+torchvision==0.17.1
+torchaudio==2.2.1
+
+# Transformers 및 tqdm
+transformers==4.46.3
+tqdm==4.67.0
+
+# Whisper (GitHub에서 최신 버전 설치)
+git+https://github.com/openai/whisper.git
+
+# 오디오 관련 라이브러리
+pyannote.audio
+ffmpeg-python
+pydub
+
+# SSH 연결용
+paramiko==3.5.0
+scp==0.15.0
+
+# FAST API
+uvicorn==0.32.1
+fastapi==0.115.6
